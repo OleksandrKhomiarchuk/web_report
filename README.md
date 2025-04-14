@@ -4,7 +4,7 @@ This web application is designed to generate a report on the Formula 1 race held
 
 ## Technologies used
 
-| Компонент                | Описание                                                                 |
+| Component                | Description                                                              |
 |--------------------------|--------------------------------------------------------------------------|
 | **Python 3**             | Main programming language                                                |
 | **Flask**                | A lightweight web framework for routing, templating and server startup   |
