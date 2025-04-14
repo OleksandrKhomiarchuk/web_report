@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Drivers List - 2018 Monaco F1 Results
+{% endblock %}
+
+
+
+
+{% block app_content %}
+<h1>Drivers List</h1>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>Name</th>
+                <th>Abbreviation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for driver in drivers %}
+            <tr>
+                <td>
+                    <a href="{{ url_for('driversapi', driver_id=driver['abbreviation']) }}">{{ driver['name'] }}
+                    </a>
+                </td>
+                <td>
+                    <a href="{{ url_for('driversapi', driver_id=driver['abbreviation']) }}">{{ driver['abbreviation'] }}
+                    </a>
+                </td>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

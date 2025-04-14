@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Driver Info - 2018 Monaco F1 Results
+{% endblock %}
+
+{% block app_content %}
+<h1>Driver Info</h1>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p><strong>Name:</strong> {{ driver.name }}</p>
+        <p><strong>Abbreviation:</strong> {{ driver.abbreviation }}</p>
+        <p><strong>Date:</strong> {{ driver.date }}</p>
+        <p><strong>Team:</strong> {{ driver.team }}</p>
+        <p><strong>Lap Time:</strong> {{ driver.lap_time }}</p>
+        <p><strong>Position:</strong> {{ driver.position }}</p>
+    </div>
+</div>
+{% endblock %}
